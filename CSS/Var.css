@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: josefin-sans-l;
+  src: url(../fonts/Josefin_Sans/JosefinSans-Light.ttf);
+}
+
+@font-face {
+  font-family: josefin-sans-b;
+  src: url(../fonts/Josefin_Sans/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: josefin-sans-r;
+  src: url(../fonts/Josefin_Sans/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: playfairdisplay-b;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+  font-family: playfairdisplay-r;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: playfairdisplay-i;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-Italic.ttf);
+}
+
+@font-face {
+  font-family: playfairdisplay-black;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-Black.ttf);
+}
+
+@font-face {
+  font-family: quicksand-l;
+  src: url(../fonts/Quicksand/Quicksand-Light.ttf);
+}
+
+@font-face {
+  font-family: quicksand-r;
+  src: url(../fonts/Quicksand/Quicksand-Regular.ttf);
+}
+
+@font-face {
+  font-family: quicksand-b;
+  src: url(../fonts/Quicksand/Quicksand-Bold.ttf);
+}
+
+@font-face {
+  font-family: quicksand-m;
+  src: url(../fonts/Quicksand/Quicksand-Medium.ttf);
+}
+/*# sourceMappingURL=Var.css.map */
