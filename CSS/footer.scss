@@ -1,0 +1,48 @@
+@import 'Var';
+
+
+#footer{
+    padding-top: 96px;
+    padding-bottom:72px ;
+}
+
+.bg-bleu{
+    background-color: $color-b1;
+}
+
+.img-footer{
+    margin-bottom: 17px;
+}
+
+#nousSuivre{
+    margin-bottom: 69px;
+}
+
+#wedding{
+    margin-bottom: 42px;
+}
+
+.logo-footer{
+    height: 175px;
+}
+
+#logoEden{
+    height: 52px;
+    cursor: pointer;
+}
+
+#footerEden{
+    padding-top: 25px;
+    padding-bottom: 107px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .images-footer{
+      margin-top: 45px;
+    }
+}
+
+i{
+    cursor: pointer;
+}
