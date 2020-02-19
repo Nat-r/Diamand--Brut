@@ -57,48 +57,42 @@ body {
   src: url(../fonts/Quicksand/Quicksand-Medium.ttf);
 }
 
-#footer {
-  padding-top: 96px;
-  padding-bottom: 72px;
+#articleMid .accueil {
+  font-family: josefin-sans-l;
+  font-size: 14px;
+  color: #808093;
 }
 
-.bg-bleu {
-  background-color: #0d0d27;
+#articleMid .accueil span {
+  color: #0d0d27;
 }
 
-.img-footer {
-  margin-bottom: 17px;
+#articleMid .text-top {
+  margin-top: 71px;
+  font-size: 16px;
+  font-family: quicksand-l;
+  color: #808093;
+  line-height: 20px;
+  padding: 0 20px 0 20px;
 }
 
-#nousSuivre {
-  margin-bottom: 69px;
+#articleMid .form-title {
+  margin-top: 57px;
+  font-size: 35px;
+  font-family: josefin-sans-l;
 }
 
-#wedding {
-  margin-bottom: 42px;
+#articleMid .form-mid input::-webkit-input-placeholder {
+  color: #acacbd;
+  font-size: 14px;
 }
 
-.logo-footer {
-  height: 175px;
+#articleMid .form-mid input {
+  padding: 20px 0 22px 20px;
+  border-radius: 0px;
 }
 
-#logoEden {
-  height: 52px;
-  cursor: pointer;
+#articleMid .form-mid input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
-
-#footerEden {
-  padding-top: 25px;
-  padding-bottom: 107px;
-}
-
-@media screen and (max-width: 600px) {
-  .images-footer {
-    margin-top: 45px;
-  }
-}
-
-i {
-  cursor: pointer;
-}
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=contact.css.map */

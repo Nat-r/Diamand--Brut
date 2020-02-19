@@ -10,9 +10,49 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <meta name="description" content="description de la page"/>
     <link rel="icon" type="image/png" href="../Logo/Diamantbrutmariage.jpg" />
+    <link rel="stylesheet" href="../CSS/contact.css">
     <title>Contact</title>
 </head>
-<body>
-    
+<body onload="checkInput(event)">
+    <div id="articleMid" class="container">
+        <div class="row">
+            <div class="col-12 text-center accueil">
+                Accueil > <span>Contact</span>
+            </div>
+            <div class="col-8 offset-2 text-top text-center">
+                En France ou à l’étranger ? Vous souhaitez organiser votre mariage ou un événement privé ? 
+                Contactez-moi, je vous répondrai dans les plus brefs délais.
+            </div>
+            <div class="col-6 form-title">
+                Votre mariage ou événement privé ?
+            </div>
+            <div class="col-12">
+                <form class="form-mid" onkeypress="checkInput(event)"  id="formMid">
+                    <div class="form-row">
+                      <div class="form-group col-md-6 mt-4">
+                        <input type="text" class="form-control" id="prenom" placeholder="Prenom *" autocomplete="off" required>
+                      </div>
+                      <div class="form-group col-md-6 mb-4 mt-4">
+                        <input type="text" class="form-control" id="nom" placeholder="Nom *" autocomplete="off" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email *" autocomplete="off" required>
+                      </div>
+                      <div class="form-group col-md-6 mb-4">
+                        <input type="number" class="form-control" id="phone" placeholder="Téléphone *" autocomplete="off" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input type="date" class="form-control" id="date" placeholder="Date de l'événement *" autocomplete="off" required> 
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="city" placeholder="Lieu / région *" autocomplete="off" required>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="sub()">Send</button>
+                  </form>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="../JS/scriptContact.js"></script>
 </html>

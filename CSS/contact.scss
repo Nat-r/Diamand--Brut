@@ -1,0 +1,40 @@
+@import 'Var';
+
+
+#articleMid{
+
+    .accueil{
+        font-family: josefin-sans-l;
+        font-size: 14px;
+        color: $color-g1;
+        span{
+            color: $color-b1;
+        }
+    }
+    .text-top{
+        margin-top: 71px;
+        font-size: 16px;
+        font-family: quicksand-l;
+        color: $color-g1;
+        line-height: 20px;
+        padding: 0 20px 0 20px;
+    }
+    .form-title{
+        margin-top: 57px;
+        font-size: 35px;
+        font-family: josefin-sans-l;
+    }
+    .form-mid{
+        input::-webkit-input-placeholder{
+            color: $color-g2;
+            font-size: 14px;
+        }
+        input{
+            padding: 20px 0 22px 20px;
+            border-radius: 0px;
+        }
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+    }
+}
