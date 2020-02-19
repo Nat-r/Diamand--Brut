@@ -85,6 +85,7 @@ body {
 #articleMid .form-mid input::-webkit-input-placeholder {
   color: #acacbd;
   font-size: 14px;
+  font-family: quicksand-l;
 }
 
 #articleMid .form-mid input {
@@ -94,5 +95,23 @@ body {
 
 #articleMid .form-mid input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+#articleMid .form-mid textarea {
+  border-radius: 0px;
+}
+
+#articleMid .form-mid textarea::-webkit-input-placeholder {
+  color: #acacbd;
+  font-size: 14px;
+  font-family: quicksand-l;
+}
+
+#articleMid .form-mid button {
+  font-family: quicksand-l;
+}
+
+#articleMid .form-mid #buttonForm {
+  display: none;
 }
 /*# sourceMappingURL=contact.css.map */
