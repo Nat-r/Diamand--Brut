@@ -27,7 +27,7 @@
                 Votre mariage ou événement privé ?
             </div>
             <div class="col-12">
-                <form class="form-mid"   id="formMid">
+                <form class="form-mid" id="formMid">
                     <div class="form-row">
                       <div class="form-group col-md-6 mt-4">
                         <input type="text" class="form-control" id="prenom" onkeypress="prenomInput(event)" placeholder="Prenom *" autocomplete="off" required>
@@ -56,13 +56,22 @@
                         " rows="7" required></textarea>
                       </div>
                     </div>
-                    <div class="col-md-12 text-center mt-4">
-                      <button id="buttonForm" type="submit" class="btn btn-outline-secondary" onclick="sub()">ENVOYER</button>
+                    <div id="buttonDiv" class="col-md-12 text-center mt-4">
+                      <button id="buttonForm" type="button" class="btn btn-outline-secondary" onclick="sub()">ENVOYER</button>
+                      <div id="messageSubmit" class="col-12 text-center"></div>
                     </div>
                   </form>
             </div>
         </div>
     </div>
 </body>
+<script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
+       
+    });
+});
+</script>
 <script src="../JS/scriptContact.js"></script>
 </html>
