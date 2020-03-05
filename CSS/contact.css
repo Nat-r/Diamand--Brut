@@ -91,6 +91,7 @@ body {
 #articleMid .form-mid input {
   padding: 20px 0 22px 20px;
   border-radius: 0px;
+  height: 54px;
 }
 
 #articleMid .form-mid input[type=number]::-webkit-inner-spin-button {
@@ -109,5 +110,78 @@ body {
 
 #articleMid .form-mid button {
   font-family: quicksand-l;
+  margin-bottom: 100px;
+}
+
+#proForm {
+  background-color: #fbfbfb;
+  padding-top: 100px;
+}
+
+#proForm .pro-form-title {
+  font-size: 35px;
+  font-family: josefin-sans-l;
+}
+
+#proForm .pro-form-sous-title {
+  margin-top: 13px;
+  font-family: quicksand-l;
+  font-size: 14px;
+  color: #808093;
+}
+
+#proForm i {
+  font-size: 50px;
+  color: #808093;
+}
+
+#proForm .btn-rotate {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#proForm .btn-rotate-off {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#proForm .form-mid-1 .marg-30 {
+  margin-bottom: 30px;
+}
+
+#proForm .form-mid-1 input::-webkit-input-placeholder {
+  color: #acacbd;
+  font-size: 14px;
+  font-family: quicksand-l;
+}
+
+#proForm .form-mid-1 input {
+  padding: 20px 0 22px 20px;
+  border-radius: 0px;
+  height: 54px;
+}
+
+#proForm .form-mid-1 input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#proForm .form-mid-1 textarea {
+  height: 306px;
+  border-radius: 0px;
+}
+
+#proForm .form-mid-1 textarea::-webkit-input-placeholder {
+  color: #acacbd;
+  font-size: 14px;
+  font-family: quicksand-l;
+}
+
+#proForm .form-mid-1 button {
+  font-family: quicksand-l;
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=contact.css.map */

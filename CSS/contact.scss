@@ -33,6 +33,7 @@
         input{
             padding: 20px 0 22px 20px;
             border-radius: 0px;
+            height: 54px;
         }
         input[type=number]::-webkit-inner-spin-button {
             -webkit-appearance: none;
@@ -47,6 +48,66 @@
         }
         button{
             font-family: quicksand-l;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+#proForm{
+    background-color: $color-w5;
+    padding-top: 100px;
+    .pro-form-title{
+        font-size: 35px;
+        font-family: josefin-sans-l;
+    }
+    .pro-form-sous-title{
+        margin-top: 13px;
+        font-family: quicksand-l;
+        font-size: 14px;
+        color: $color-g1;
+    }
+    i{
+        font-size: 50px;
+        color: $color-g1;
+    }
+    .btn-rotate{
+        transform: rotate(225deg);
+        transition: 0.5s;
+    }
+    .btn-rotate-off{
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+    .form-mid-1{
+
+        .marg-30{
+            margin-bottom: 30px;
+        }
+        input::-webkit-input-placeholder{
+            color: $color-g2;
+            font-size: 14px;
+            font-family: quicksand-l;
+        }
+        input{
+            padding: 20px 0 22px 20px;
+            border-radius: 0px;
+            height: 54px;
+        }
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        textarea{
+            height: 306px;
+            border-radius: 0px;
+        }
+        textarea::-webkit-input-placeholder{
+            color: $color-g2;
+            font-size: 14px;
+            font-family: quicksand-l;
+        }
+        button{
+            font-family: quicksand-l;
+            margin-bottom: 100px;
         }
     }
 }

@@ -11,9 +11,16 @@
     <meta name="description" content="description de la page"/>
     <link rel="icon" type="image/png" href="../Logo/Diamantbrutmariage.jpg" />
     <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <title>Contact</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      /*function onSubmit(token) {
+        document.getElementById("formMid").submit();
+      }*/
+    </script>
 </head>
-<body onload="prenomInput(),nomInput(),emailInput(),dateInput(),phoneInput(),cityInput(),areaInput()">
+<body onload="prenomInput(),NomPrenom(),nomInput(),entrePrise(),emailInput(),emailInput1(),dateInput(),phoneInput(),phoneInput1(),cityInput(),areaInput(),areaInput1()">
     <div id="articleMid" class="container">
         <div class="row">
             <div class="col-12 text-center accueil">
@@ -27,7 +34,7 @@
                 Votre mariage ou événement privé ?
             </div>
             <div class="col-12">
-                <form class="form-mid" id="formMid">
+                <form class="form-mid" id="formMid" action="?" method="POST">
                     <div class="form-row">
                       <div class="form-group col-md-6 mt-4">
                         <input type="text" class="form-control" id="prenom" onkeypress="prenomInput(event)" placeholder="Prenom *" autocomplete="off" required>
@@ -57,21 +64,103 @@
                       </div>
                     </div>
                     <div id="buttonDiv" class="col-md-12 text-center mt-4">
-                      <button id="buttonForm" type="button" class="btn btn-outline-secondary" onclick="sub()">ENVOYER</button>
+                      <button id="buttonForm" type="button" class="btn btn-outline-secondary g-recaptcha" data-sitekey="6LdtwNoUAAAAAPN0gagVPgrqyRUQiXnE_6ADXdIZ" data-callback='onSubmit' onclick="sub()">ENVOYER</button>
                       <div id="messageSubmit" class="col-12 text-center"></div>
                     </div>
                   </form>
             </div>
         </div>
     </div>
+    <div id="proForm" class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 pro-form-title">
+            Presse ou professionnels ?
+          </div>
+          <div class="col-2">
+            <img id="btnRotate" onclick="btnRotate()" src="../Photo_site/button-press.png" alt="btn">
+          </div>
+          <div class="col-12 pro-form-sous-title mb-4">
+            Contactez moi par téléphone ou laisser moi votre message.
+          </div>
+          <form class="form-mid-1" id="formMid1" action="?" method="POST"></form>
+            <div class="col-md-6 form-mid-1">
+              <div class="form-row">
+                <div class="form-group col-md-12 marg-30">
+                  <input type="text" class="form-control" id="prenom1" onkeypress="NomPrenom(event)" placeholder="Prenom *" autocomplete="off" required>
+                </div>
+                <div class="form-group col-md-12 marg-30">
+                  <input type="text" class="form-control" id="entreprise" onkeypress="entrePrise(event)" placeholder="EntrePrise *" autocomplete="off" required>
+                </div>
+                <div class="form-group col-md-12 marg-30">
+                  <input type="email" class="form-control" id="email1" onkeypress="emailInput1(event)" placeholder="Email *" autocomplete="off" required>
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="number" class="form-control" id="phone1" onkeypress="phoneInput1(event)" placeholder="Téléphone *" autocomplete="off" required>
+                </div>
+              </div>
+            </div>
+          <div class="col-md-6 form-mid-1">
+            <textarea class="form-control" id="textAreaFormMid1" onkeypress="areaInput1(event)" placeholder="Votre message" rows="7" required></textarea>
+          </div>
+          <div class="col-12 form-mid-1">
+            <div id="buttonDiv" class="col-md-12 text-center mt-4">
+              <button id="buttonForm" type="button" class="btn btn-outline-secondary g-recaptcha" data-sitekey="6LdtwNoUAAAAAPN0gagVPgrqyRUQiXnE_6ADXdIZ" data-callback='onSubmit' onclick="sub()">ENVOYER</button>
+              <div id="messageSubmit" class="col-12 text-center"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-bleu text-white text-center">
+      <div class="container" id="footer">
+          <div class="row">
+              <div class="col-md-3 col-sm-6">
+                  <img class="logo-footer"  src="../Logo/logo vdef.png" alt="logo">
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <p id="Wedding" class="josefin-sans-l">VOTRE WEDDING PLANNER</p>
+                  <p class="quicksand-l">Votre agence wedding planner spécialisée dans les mariages à la montagne et à l’étranger.</p>
+                  <p class="quicksand-l ">Diplômée de l’école Jaëlys.</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <p class="josefin-sans-l" id="nousSuivre">NOUS SUIVRE</p>
+                  <div class="row justify-content-around">
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-pinterest-p"></i>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 images-footer">
+                  <p class="josefin-sans-l">@ DIAMANTBRUTMARIAGE</p>
+                  <div class="row img-footer">
+                      <div class="col-md-3 col-sm-3 col-6 "><img src="../Photo_site/example_footer.png" alt=""></div>
+                      <div class="col-md-3 col-sm-3 col-6"><img src="../Photo_site/example_footer.png" alt=""></div>
+                      <div class="col-md-3 col-sm-3 col-6"><img src="../Photo_site/example_footer.png" alt=""></div>
+                      <div class="col-md-3 col-sm-3 col-6"><img src="../Photo_site/example_footer.png" alt=""></div>
+                  </div>
+                  <div class="row ">
+                      <div class="col-md-3 col-sm-3 col-6"><img src="../Photo_site/example_footer.png" alt=""></div>
+                      <div class="col-md-3 col-sm-3 col-6"><img src="../Photo_site/example_footer.png" alt=""></div>
+                      <div class="col-md-3 col-sm-3 col-6"><img src="../Photo_site/example_footer.png" alt=""></div>
+                      <div class="col-md-3 col-sm-3 col-6"><img src="../Photo_site/example_footer.png" alt=""></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid">
+      <div class="container" id="footerEden">
+          <div class="row text-secondary quicksand-l">
+              <div class="col-md-2" ><a href="https://www.edenschool.fr/"><img  src="../Logo/logoEdenSchool.png" id="logoEden" alt="Logo logo Eden School"></a></div>
+              <div class="col-md-4 text-left"><p>Un site réalisé par EDEN School
+                  L’école Digitale et Numérique des 14 / 18 ans</p></div>
+              <div class="col-md-6 text-right"><p>Mentions légales</p></div>
+          </div>
+      </div>
+  </div>
+
 </body>
-<script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
-<script>
-grecaptcha.ready(function() {
-    grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
-       
-    });
-});
-</script>
 <script src="../JS/scriptContact.js"></script>
 </html>
